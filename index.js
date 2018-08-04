@@ -36,6 +36,8 @@ function calculatesFarePrice(start, end) {
   if ( numFeet > 400 && numFeet < 2000) {
     return numFeet * 0.02;
     }
-  else if 
+  else if ( numFeet > 2000) {
+    return
+  }
 }
 
