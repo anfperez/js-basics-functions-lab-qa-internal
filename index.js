@@ -30,4 +30,5 @@ function distanceTravelledInFeet(start, end) {
   return Math.abs(startBlock - endBlock);
 }
 
+function calculatesFarePrice()
 
