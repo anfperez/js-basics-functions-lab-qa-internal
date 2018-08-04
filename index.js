@@ -30,17 +30,17 @@ function distanceTravelledInFeet(start, end) {
   return Math.abs(startBlock - endBlock);
 }
 
-function calculatesFarePrice(start, end) {
-  let numFeet = distanceTravelledInFeet(start, end);
-  numFeet = numFeet - 400;
-  if ( numFeet > 400 && numFeet < 2000) {
-    return numFeet * 0.02;
-    }
-  else if ( numFeet > 2000 && numFeet < 2500) {
-    return "$25.00";
-  }
-  else if (numFeet > 2500) {
-    return "cannot travel that far";
+function calculatesFarePrice (start, end) {
+  const distance = distanceTravelledInFeet(start, end);
+
+  if (distance <= 400) {
+    return "0";
+  } else if (distance > 400 && distance <= 2000) {
+    return .02 * (distance - 400);
+  } else if (distance > 2000 && distance < 2500) {
+    return 25;
+  } else {
+    return 'cannot travel that far';
   }
 }
 
