@@ -30,5 +30,9 @@ function distanceTravelledInFeet(start, end) {
   return Math.abs(startBlock - endBlock);
 }
 
-function calculatesFarePrice(start, end)
+function calculatesFarePrice(start, end) {
+  let numFeet = distanceTravelledInFeet(start, end);
+  numFeet = numFeet - 400;
+  if numFeet 
+}
 
